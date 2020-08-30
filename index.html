@@ -1,10 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Colin Chartier | Startups, softwar</title>
+	<title>Colin Chartier | Startups, software</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#2d89ef">
+	<meta name="theme-color" content="#ffffff">
+
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="True">
+	<link rel="canonical" href="https://colinchartier.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap & FeatherFont CSS -->
+	<link rel="stylesheet" href="/static/feather-font/css/iconfont.css"
+		  crossorigin="anonymous">
+	<link rel="stylesheet" href="/static/bootstrap.min.css"
+		  crossorigin="anonymous">
 </head>
 <body>
-	<script src="dist/main.js"></script>
+<header>
+	<nav class="navbar navbar-light navbar-expand-sm">
+		<script>
+			const toggleNav = () => {
+				var nav = document.getElementById("navbarSupportedContent");
+				if (nav.className === "navbar-collapse collapse") {
+					nav.className = "navbar-collapse collapse show";
+				} else {
+					nav.className = "navbar-collapse collapse";
+				}
+			}
+		</script>
+		<div class="container mx-auto px-0 my-0">
+			<img
+					class="navbar-brand"
+					src="/static/logo-dark.svg"
+					alt="C2"
+					style="height: 2em; width: auto;"
+			>
+
+			<button class="navbar-toggler" type="button"
+					data-toggle="collapse" onclick="toggleNav()"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbarSupportedContent" class="navbar-collapse collapse">
+				<ul class="navbar-nav ml-auto mr-sm-1 mr-lg-3">
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="/pricing">
+						Pricing
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="/layerfile-ide">
+						Docs
+					</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link mx-2" href="/blog">
+						Blog
+					</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+<div id="app"></div>
+<script src="dist/main.js"></script>
 </body>
 </html>
