@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="866" height="415" viewBox="0 0 866 415">
+  <defs>
+    <clipPath id="clip-Web_1920_1">
+      <rect width="866" height="415"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_1" data-name="Web 1920 – 1" clip-path="url(#clip-Web_1920_1)">
+    <g id="Group_23" data-name="Group 23" transform="translate(-92 -2185)">
+      <g id="Group_22" data-name="Group 22" transform="translate(-714 149)">
+        <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(817 2046)" fill="#222433" stroke="#707070" stroke-width="1">
+          <rect width="840" height="397" rx="18" stroke="none"/>
+          <rect x="0.5" y="0.5" width="839" height="396" rx="17.5" fill="none"/>
+        </g>
+        <text id="FROM_vm_ubuntu:18.04" data-name="FROM vm/ubuntu:18.04" transform="translate(901 2103)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">FROM </tspan><tspan y="0" fill="#fff">vm</tspan><tspan y="0" fill="#b96721">/</tspan><tspan y="0" fill="#fff">ubuntu:</tspan><tspan y="0">18.04</tspan></text>
+        <text id="RUN_sleep_20" data-name="RUN sleep 20" transform="translate(901 2149)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">RUN </tspan><tspan y="0" fill="#fff">sleep</tspan><tspan y="0" xml:space="preserve"> 20</tspan></text>
+        <text id="WORKDIR_app" data-name="WORKDIR /app" transform="translate(901 2195)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">WORKDIR </tspan><tspan y="0" fill="#b86721">/</tspan><tspan y="0" fill="#fff">app</tspan></text>
+        <text id="COPY_._." data-name="COPY . ." transform="translate(901 2242)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">COPY </tspan><tspan y="0" fill="#fff">. .</tspan></text>
+        <text id="CACHE_node_modules" data-name="CACHE node_modules" transform="translate(901 2288)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">CACHE </tspan><tspan y="0" fill="#fff">node_modules</tspan></text>
+        <text id="RUN_npm_install_npm_run_test" data-name="RUN npm install &amp;&amp; npm run test" transform="translate(901 2334)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">RUN </tspan><tspan y="0" fill="#fff">npm install </tspan><tspan y="0" fill="#b86721">&amp;&amp;</tspan><tspan y="0" xml:space="preserve" fill="#fff"> npm run </tspan><tspan y="0" fill="#8ce8c8">test</tspan></text>
+        <text id="ARTIFACT_PRIVATE_codecov-report.txt_" data-name="ARTIFACT PRIVATE codecov-report.txt|" transform="translate(901 2380)" fill="#ada7f4" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">ARTIFACT PRIVATE </tspan><tspan y="0" fill="#fff">codecov-report.txt|</tspan></text>
+        <text id="_1_2_3_4_5_6_7" data-name="1
+2
+3
+4
+5
+6
+7" transform="translate(853 2102)" fill="rgba(234,242,247,0.31)" font-size="27" font-family="Menlo-Regular, Menlo"><tspan x="0" y="0">1</tspan><tspan x="0" y="46">2</tspan><tspan x="0" y="92">3</tspan><tspan x="0" y="138">4</tspan><tspan x="0" y="184">5</tspan><tspan x="0" y="230">6</tspan><tspan x="0" y="276">7</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
