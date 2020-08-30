@@ -1,0 +1,30 @@
+{
+  "name": "colinchartier.com",
+  "version": "1.0.0",
+  "description": "Personal Website (colinchartier.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently --kill-others \"webpack -w\" \"http-server -p 8000\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ColinChartier/colinchartier.com.git"
+  },
+  "keywords": [
+    "site",
+    "javascript"
+  ],
+  "author": "Colin Chartier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ColinChartier/colinchartier.com/issues"
+  },
+  "homepage": "https://colinchartier.com",
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "http-server": "^0.12.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
