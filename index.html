@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="w-100 m-0 p-0">
+<html>
 <head>
 	<title>Colin Chartier | Startups, software</title>
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -21,59 +21,12 @@
 		  crossorigin="anonymous">
 	<link rel="stylesheet" href="/static/bootstrap.min.css"
 		  crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/static/css/main.css">
 </head>
-<body class="w-100 m-0 p-0">
-<header>
-	<nav class="navbar navbar-light navbar-expand-sm">
-		<script>
-			const toggleNav = () => {
-				var nav = document.getElementById("navbarSupportedContent");
-				if (nav.className === "navbar-collapse collapse") {
-					nav.className = "navbar-collapse collapse show";
-				} else {
-					nav.className = "navbar-collapse collapse";
-				}
-			}
-		</script>
-		<div class="container mx-auto px-0 my-0">
-			<img
-					class="navbar-brand"
-					src="/static/logo/logo-dark.svg"
-					alt="C2"
-					style="height: 2em; width: auto;"
-			>
-
-			<button class="navbar-toggler" type="button"
-					data-toggle="collapse" onclick="toggleNav()"
-					aria-controls="navbarSupportedContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navbarSupportedContent" class="navbar-collapse collapse">
-				<ul class="navbar-nav ml-auto mr-sm-1 mr-lg-3">
-					<li class="nav-item">
-					<a class="nav-link mx-2" href="/pricing">
-						Pricing
-					</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link mx-2" href="/layerfile-ide">
-						Docs
-					</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link mx-2" href="/blog">
-						Blog
-					</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-</header>
+<body>
 <div id="app" class="w-100 m-0 p-0"></div>
-<script src="dist/main.js"></script>
+<script src="dist/bundle.js"></script>
 </body>
 </html>

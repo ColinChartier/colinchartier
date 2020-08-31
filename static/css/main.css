@@ -1,0 +1,39 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.main-title {
+    font-family: 'Leckerli One', cursive;
+}
+
+.avatar-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+@media (min-width: 768px) { /*-md*/
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /*-lg*/
+    .container {
+        margin-top: 9rem;
+        margin-bottom: 9rem;
+    }
+}

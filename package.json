@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently --kill-others \"webpack -w\" \"http-server -p 8000\""
+    "dev": "concurrently --kill-others \"webpack -w\" \"http-server -c-1 -p 8000\""
   },
   "repository": {
     "type": "git",
@@ -22,9 +22,18 @@
   },
   "homepage": "https://colinchartier.com",
   "devDependencies": {
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
     "concurrently": "^5.3.0",
     "http-server": "^0.12.3",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "markdown-loader": "^5.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
