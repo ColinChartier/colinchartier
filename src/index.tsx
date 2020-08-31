@@ -5,46 +5,55 @@ import {Tab} from "./tab";
 import AboutMe from "./tabs/about-me";
 import Essays from "./tabs/essays";
 
-type MainState = {
-    currTabId: string,
-}
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import Essay from "./tabs/essay";
 
-export default class App extends React.Component<any, MainState> {
-    tabs: { [key:string]:Tab }
+
+export default class App extends React.Component<any, any> {
+    tabs: { [key: string]: Tab }
 
     constructor(props: any) {
         super(props);
 
-        this.state = {
-            currTabId: "",
-        }
-
         this.tabs = {
             "": {
                 id: "",
-                body: <AboutMe />,
+                body: <AboutMe/>,
                 title: "About me",
             },
             "essays": {
                 id: "essays",
-                body: <Essays />,
+                body: <Essays/>,
                 title: "Essays",
             },
         }
+
+        setTimeout(window.onpopstate, 0);
     }
 
     render() {
-        return <div>
-            <Header
-                tabs={Object.keys(this.tabs).map(x => this.tabs[x])}
-                onTabChange={tabId => this.setState({currTabId: tabId})}
-            />
-            {this.tabs[this.state.currTabId].body}
-        </div>;
+        return <Router>
+            <div>
+                <Header
+                    tabs={Object.keys(this.tabs).map(x => this.tabs[x])}
+                />
+                <Switch>
+                    {Object.keys(this.tabs).map(id => <Route path={"/"+id} exact key={id}>
+                        {this.tabs[id].body}
+                    </Route>)}
+                    <Route path="/essays/:id" component={Essay} />
+                </Switch>
+            </div>
+        </Router>;
     }
 }
 
 ReactDOM.render(
-    <App />,
+    <App/>,
     document.getElementById("app"),
 )

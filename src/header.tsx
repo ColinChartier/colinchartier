@@ -1,31 +1,23 @@
 import React from "react";
 import {Tab} from "./tab";
+import {Link} from "react-router-dom";
 
 type NavButtonProps = {
     tab: Tab,
-    onClick: () => void,
 }
 
-
-function NavButton({tab, onClick}: NavButtonProps) {
+function NavButton({tab}: NavButtonProps) {
     return <li className="nav-item">
-        <a href="#" className="nav-link mx-2" onClick={(event) => {
-            history.pushState(
-                {},
-                "Colin Chartier | "+tab.title,
-                "/"+tab.id
-            );
-            event.preventDefault();
-            onClick();
-        }}>
+        <Link
+            to={"/"+tab.id}
+        >
             {tab.title}
-        </a>
+        </Link>
     </li>
 }
 
 type HeaderProps = {
     tabs: Tab[],
-    onTabChange: (tabId: string) => void
 };
 
 type HeaderState = {
@@ -68,8 +60,8 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
                     >
                         <ul className="navbar-nav ml-auto mr-sm-1 mr-lg-3">
                             {this.props.tabs.map(tab => <NavButton
+                                key={tab.id}
                                 tab={tab}
-                                onClick={() => this.props.onTabChange(tab.id)}
                             />)}
                         </ul>
                     </div>

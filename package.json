@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently --kill-others \"webpack -w\" \"http-server -c-1 -p 8000\""
+    "dev": "concurrently --kill-others \"webpack -w --mode=development\" \"http-server -c-1 -p 8000 --proxy http://localhost:8000?\""
   },
   "repository": {
     "type": "git",
@@ -32,8 +32,10 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "markdown-loader": "^5.1.0",
+    "@types/react-router-dom": "^5.1.5",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-markdown": "^4.3.1",
+    "react-router-dom": "^5.2.0"
   }
 }
