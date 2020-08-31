@@ -9,7 +9,7 @@ type NavButtonProps = {
 function NavButton({tab}: NavButtonProps) {
     return <li className="nav-item">
         <Link
-            to={"/"+tab.id}
+            to={"/" + tab.id}
         >
             {tab.title}
         </Link>
@@ -37,12 +37,14 @@ export default class Header extends React.Component<HeaderProps, HeaderState> {
         return <header>
             <nav className="navbar navbar-light navbar-expand-md">
                 <div className="container mx-auto px-0 my-0">
-                    <img
-                        className="navbar-brand"
-                        src="/static/logo/logo-dark.svg"
-                        alt="C2"
-                        style={{height: "2em", width: "auto"}}
-                    />
+                    <Link to="/">
+                        <img
+                            className="navbar-brand"
+                            src="/static/logo/logo-dark.svg"
+                            alt="C2"
+                            style={{height: "2em", width: "auto"}}
+                        />
+                    </Link>
 
                     <button className="navbar-toggler"
                             type="button"

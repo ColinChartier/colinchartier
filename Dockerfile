@@ -1,6 +1,6 @@
 FROM node:14 AS webpacker
 WORKDIR /src
-COPY package.json ./
+COPY package.json package-lock.json ./
 RUN npm install
 COPY . ./
 RUN ./node_modules/.bin/webpack
@@ -8,6 +8,7 @@ RUN ./node_modules/.bin/webpack
 
 FROM node:14
 COPY --from=webpacker /src/dist dist
+COPY index.html ./
 COPY static static
 RUN npm install -g http-server
 
