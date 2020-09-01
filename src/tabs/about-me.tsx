@@ -15,8 +15,8 @@ export default function AboutMe(props: any) {
                     <div className="mr-sm-2">
                         <h1 className="main-title">Hi, I'm Colin.</h1>
                         <p className="my-4">
-                            Co-founder & CEO @ <a href="https://layerci.com">LayerCI (YC S20)</a>, I'm passionate about
-                            building the glue that keep the development world ticking.
+                            Co-founder & CEO @ <a href="https://layerci.com">LayerCI (YC S20)</a>.
+                            I like helping developers build things faster.
                             Prior to co-founding Layer, I was CTO @ <a href="https://parsehub.com">ParseHub</a>, a
                             no-code web scraper.
                         </p>
