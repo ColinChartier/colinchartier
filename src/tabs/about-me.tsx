@@ -15,8 +15,8 @@ export default function AboutMe(props: any) {
                     <div className="mr-sm-2">
                         <h1 className="main-title">Hi, I'm Colin.</h1>
                         <p className="my-4">
-                            Co-founder & CEO @ <a href="https://layerci.com">LayerCI (YC S20)</a>.
-                            I like helping developers build things faster.
+                            Co-founder & CEO @ <a href="https://layerci.com">LayerCI</a>.
+                            We're building infrastructure for the future of software development.
                             Prior to co-founding Layer, I was CTO @ <a href="https://parsehub.com">ParseHub</a>, a
                             no-code web scraper.
                         </p>
@@ -27,11 +27,30 @@ export default function AboutMe(props: any) {
                 </div>
             </div>
         </div>
+	
+	<div className="jumbotron">
+		<div className="container">
+			<div className="row mb-5 d-flex justify-content-center">
+				<h1>Showcase</h1>
+			</div>
+			<div className="row d-flex flex-row align-items-center">
+				<a href="https://www.forbes.com/profile/layerci" className="col mx-2">
+					<img src="/static/images/forbes.png" className="showcase-logo" />
+				</a>
+				<a href="https://www.ycombinator.com/companies/21906" className="col mx-2">
+					<img src="/static/images/yc.png" className="showcase-logo" />
+				</a>
+				<a href="https://betakit.com/11-canadian-startups-at-y-combinators-summer-2020-demo-day" className="col mx-2">
+					<img src="/static/images/betakit.png" className="showcase-logo" />
+				</a>
+			</div>
+		</div>
+	</div>
 
         <div className="container">
             <div className="row d-flex flex-row align-items-center">
                 <div className="col-12 col-sm-6">
-                    <h1>LayerCI (YC S20)</h1>
+                    <h2>LayerCI</h2>
                     <p>Idea: Combine the power of hosted staging servers, with the convenience of per-commit CI
                         pipelines.</p>
                     <h5>To use it</h5>
@@ -68,7 +87,7 @@ export default function AboutMe(props: any) {
         <div className="container">
             <div className="row d-flex flex-col flex-sm-row-reverse align-items-center">
                 <div className="col-12 col-sm-6">
-                    <h1>Sanic (open source)</h1>
+                    <h2>Sanic (OSS)</h2>
                     <p>Idea: Wrap all of the common docker/kubernetes functionality that you'd otherwise have to make from scratch.</p>
                     <h5>To use it</h5>
                     <ol>
