@@ -30,17 +30,14 @@ export default function AboutMe(props: any) {
 	
 	<div className="jumbotron">
 		<div className="container">
-			<div className="row mb-5 d-flex justify-content-center">
-				<h1>Showcase</h1>
-			</div>
 			<div className="row d-flex flex-row align-items-center">
-				<a href="https://www.forbes.com/profile/layerci" className="col mx-2">
+				<a href="https://www.forbes.com/profile/layerci" className="col mx-md-2">
 					<img src="/static/images/forbes.png" className="showcase-logo" />
 				</a>
-				<a href="https://www.ycombinator.com/companies/21906" className="col mx-2">
+				<a href="https://www.ycombinator.com/companies/21906" className="col mx-md-2">
 					<img src="/static/images/yc.png" className="showcase-logo" />
 				</a>
-				<a href="https://betakit.com/11-canadian-startups-at-y-combinators-summer-2020-demo-day" className="col mx-2">
+				<a href="https://betakit.com/11-canadian-startups-at-y-combinators-summer-2020-demo-day" className="col mx-md-2">
 					<img src="/static/images/betakit.png" className="showcase-logo" />
 				</a>
 			</div>
