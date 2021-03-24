@@ -1,7 +1,12 @@
-import React, {Key} from "react";
+import React from "react";
 import {Link} from "react-router-dom";
 
 let essays = [
+    {
+        id: "unconventional-investing",
+        title: "Unconventional investing",
+        date: "2021-03-24"
+    },
     {
         id: "everyone-wants-what-someone-else-has",
         title: "Everyone wants what someone else has",
