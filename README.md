@@ -1,22 +1,22 @@
-# Hi, I'm Colin, co-founder and CEO of LayerCI (YC S20)
+# Hi, I'm Colin, co-founder and CEO of webapp.io (YC S20)
 
-At Layer, we're merging staging servers, CI, and pull requests into [a Continuous Staging](https://continuousstaging.com) workflow.
+At webapp.io, we're merging staging servers, CI, and pull requests into [a Continuous Staging](https://continuousstaging.com) workflow for webapps.
 
 ### 1. Create a Layerfile
 These are based on Dockerfiles, but build entire staging VMs instead of just containers.
 ![Layerfile](https://raw.githubusercontent.com/ColinChartier/colinchartier/master/static/images/layerfile.svg)
 
 
-### 2. Install Layer
-- [Login to Layer](https://layerci.com)
-- [Install Layer onto GitHub](https://github.com/apps/layerci/installations/new)
+### 2. Install webapp.io
+- [Log in](https://webapp.io)
+- [Install Layer onto GitHub](https://github.com/apps/webappio/installations/new)
 
 ### 3. Every time you push a Layerfile, we'll create a new staging server per-commit for you in seconds
-![Layer dash](https://raw.githubusercontent.com/ColinChartier/colinchartier/master/static/images/dash.svg)
+![Dashboard](https://raw.githubusercontent.com/ColinChartier/colinchartier/master/static/images/dash.svg)
 
 
 ## Sanic
-I've also built [sanic](https://sanic.io) which we use for the deployment process at Layer - it lets you
+I also built [sanic](https://sanic.io) which we use for the deployment process at webapp.io - it lets you
 build and deploy a bunch of Docker images to a kubernetes cluster with minimal effort.
 
 ## ParseHub
