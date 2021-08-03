@@ -15,14 +15,14 @@ export default function AboutMe(props: any) {
                     <div className="mr-sm-2">
                         <h1 className="main-title">Hi, I'm Colin.</h1>
                         <p className="my-4">
-                            Co-founder & CEO @ <a href="https://layerci.com">LayerCI</a>.
-                            We're building infrastructure for the future of software development.
-                            Prior to co-founding Layer, I was CTO @ <a href="https://parsehub.com">ParseHub</a>, a
+                            Co-founder & CEO @ <a href="https://webapp.io">webapp.io</a>.
+                            We're building infrastructure for the future of full-stack web development.
+                            Prior to co-founding webapp.io, I was CTO @ <a href="https://parsehub.com">ParseHub</a>, a
                             no-code web scraper.
                         </p>
-                        <a href="mailto:colin@layerci.com"
+                        <a href="mailto:colin@webapp.io"
                            className="btn btn-sm btn-outline-primary"><i
-                            className="feather icon-mail"/> colin@layerci.com</a>
+                            className="feather icon-mail"/> colin@webapp.io</a>
                     </div>
                 </div>
             </div>
@@ -47,13 +47,12 @@ export default function AboutMe(props: any) {
         <div className="container">
             <div className="row d-flex flex-row align-items-center">
                 <div className="col-12 col-sm-6">
-                    <h2>LayerCI</h2>
-                    <p>Idea: Combine the power of hosted staging servers, with the convenience of per-commit CI
-                        pipelines.</p>
+                    <img src="https://webapp.io/static/logo/logodarkwithtext.svg" alt="webapp.io" style={{marginBottom: "1rem", height: "2rem", width: "auto"}} />
+                    <p>Idea: Use memory snapshots to make full-stack web development faster than ever before.</p>
                     <h5>To use it</h5>
                     <ol>
-                        <li><a href="https://layerci/login">Install Layer onto your repository</a></li>
-                        <li><a href="https://layerci.com/layerfile-ide#editor">Create a Layerfile to describe your
+                        <li><a href="https://webapp.io">Install webapp.io onto your repository</a></li>
+                        <li><a href="https://webapp.io/docs/layerfile-reference">Create a Layerfile to describe your
                             staging VM</a></li>
                         <li>Every time you push code, we'll annotate GitHub with a link to a new staging environment
                         </li>
@@ -61,8 +60,7 @@ export default function AboutMe(props: any) {
                     <h5>Benefits</h5>
                     <ul>
                         <li><b><i className="feather icon-fast-forward"/> Review changes faster</b>with with a
-                            full-stack
-                            staging environment for every commit.
+                            full-stack review environment for every commit.
                         </li>
                         <li><b><i className="feather icon-dollar-sign"/> Reduce waste</b> - we hibernate your
                             environments seamlessly when you aren't using them.
