@@ -10,7 +10,7 @@ These are based on Dockerfiles, but build entire staging VMs instead of just con
 
 
 ### 2. Install webapp.io
-- [Log in](https://webapp.io)
+- [Log in](https://webapp.io/register)
 - [Install Layer onto GitHub](https://github.com/apps/webappio/installations/new)
 
 ### 3. Every time you push a Layerfile, we'll create a new staging server per-commit for you in seconds
